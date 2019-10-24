@@ -1,0 +1,22 @@
+Create database MariaCofe
+CREATE TABLE Information(
+	Description varchar(max) NOT NULL,
+	Address varchar(max) NOT NULL,
+	Tel varchar(20) NOT NULL,
+	Email varchar(50) NOT NULL,
+	OpeningHours varchar(max) NOT NULL,
+	Signature varchar(50) NOT NULL
+)
+CREATE TABLE [dbo].[Intro](
+	[Title] [varchar](max) NOT NULL,
+	[Picture] [varchar](max) NOT NULL,
+	[Description] [varchar](max) NOT NULL
+)
+CREATE TABLE [dbo].[Products](
+	[ID] [int] IDENTITY(1,1) primary key,
+	[Name] [varchar](50) NOT NULL,
+	[Picture] [varchar](max) NOT NULL,
+	[DetailDescription] ntext  NOT NULL,
+	[DateCreated] [date] NOT NULL,
+	[price] [nvarchar](50) NULL
+)
